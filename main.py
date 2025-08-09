@@ -123,6 +123,20 @@ target_subject = st.sidebar.selectbox("Môn học muốn dự đoán", [
 
 do_predict = st.sidebar.button("Dự đoán")
 
+
+# Hướng dẫn sử dụng
+# -------------------------
+st.sidebar.markdown("---")
+st.sidebar.subheader("📖 Hướng dẫn sử dụng")
+st.sidebar.markdown(
+    """
+    1. **Tải file Excel**: Sử dụng mẫu `input-score.xlsx` để nhập danh sách môn học và điểm chữ đã đạt.
+    2. **Chọn môn cần dự đoán** trong danh sách.
+    3. Nhấn **Dự đoán** để xem kết quả.
+    4. Nếu file thiếu dữ liệu nhiều môn, hệ thống sẽ báo lỗi.
+    5. Điểm dự đoán hiển thị gồm **điểm chữ** và **điểm số chuẩn**.
+    """
+)
 if uploaded is None:
     st.warning("Vui lòng tải lên file Excel chứa các môn và điểm chữ."); st.stop()
 
