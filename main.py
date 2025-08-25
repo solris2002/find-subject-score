@@ -8,7 +8,7 @@ import re
 from pathlib import Path
 
 st.set_page_config(page_title="Dự đoán điểm môn", layout="wide")
-st.title("📘 Dự đoán điểm số học phần ")
+st.title("📘 DỰ ĐOÁN ĐIỂM SỐ HỌC PHẦN ")
 
 
 # Đường dẫn tới file mẫu có sẵn
